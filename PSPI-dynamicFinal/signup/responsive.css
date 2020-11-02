@@ -1,0 +1,239 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+img {
+	width: 30%;
+	height: 30%;
+    filter: grayscale(100%);
+    display: block;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+a {
+    color: #7198a8;
+    text-decoration: none;
+}
+
+#firstname {
+    display: block;
+	border: none;
+	background: none;
+    margin: 20px auto;
+	text-align: center;
+	border: 1.3px solid #2F4858;
+	padding: 15px 10px;
+	width: 350px;
+	outline: none;
+	border-radius: 10px;
+}
+
+#lastname {
+    display: block;
+	border: none;
+	background: none;
+    margin: 20px auto;
+	text-align: center;
+	border: 1.3px solid #2F4858;
+	padding: 15px 10px;
+	width: 350px;
+	outline: none;
+	border-radius: 10px;
+}
+
+#username , #signup input[type= email] , #signup input[type=password] {
+	border: none;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 1.3px solid #2F4858;
+	padding: 14px 10px;
+	width: 350px;
+	outline: none;
+	border-radius: 10px;
+}
+
+#signup input[type=text]:focus , #signup input[type= email]:focus , #signup input[type=password]:focus {
+	border: 1.3px solid #F6AE2D;
+}
+
+#signup input[type=submit] {
+	border: none;
+	background: #2F4858;
+	color: #ffff ;
+	display: block;
+    margin: 20px auto;
+    height: 40px;
+	text-align: center;
+	padding: 14px 10px;
+	width: 350px;
+	outline: none;
+	border-radius: 10px;
+}
+
+#loginlink {	
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.home {
+    width: 70px;
+    height: 70px;
+    border-radius: 24px;
+    background-color: #f5f5f5;
+    opacity: 0.9;
+    color: #ffff;
+    position: absolute;
+    top: 10px !important;
+    left: 10px !important;
+    font-size: 50px;
+    text-align: center;
+}
+.home a {
+    width: 70px;
+    height: 70px;
+    border-radius: 24px;
+    color: #2F4858;
+}
+
+.home a:hover {
+    color: #F6AE2D;
+}
+
+.bi-house {
+    margin: 7px 5px 5px 5px;
+}
+
+@media only screen and (min-width:1000px) {
+
+    body {
+        min-height: 100%;
+        background-image: url('mountain.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+     }
+
+    img {
+	    width: 30%;
+	    height: 30%;
+        filter: grayscale(100%);
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    #signup {
+        width: 350px;
+        position: absolute;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background: #ffff;
+        text-align: center;
+        border-radius: 10px;
+        opacity: 0.90;
+    }
+    
+    #firstname , #lastname {
+        display: initial;
+        border: none;
+        background: none;
+        margin-top: 10px;
+        margin-bottom: 5px;;
+        text-align: center;
+        border: 1.2px solid #2F4858;
+        padding: 15px 10px;
+        width: 135px;
+        outline: none;
+        border-radius: 10px;
+    }
+    
+    #username , #signup input[type= email] , #signup input[type=password] {
+        border: none;
+        background: none;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        border: 1.2px solid #2F4858;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        border-radius: 10px;
+    }
+    
+    #signup input[type=text]:focus , #signup input[type= email]:focus , #signup input[type=password]:focus {
+        border: 1.2px solid #F6AE2D;
+    }
+    
+    #signup input[type=submit] {
+        border: none;
+        background: #2F4858;
+        color: white;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        padding: 14px 10px;
+        width: 300px;
+        outline: none;
+        border-radius: 10px;
+    }
+    
+    #signup input[type=submit]:hover {
+        background: #F6AE2D;
+    }
+    a{
+        color: #F6AE2D;
+    }
+    #loginlink {	
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    .home {
+        width: 70px;
+        height: 70px;
+        border-radius: 24px;
+        background-color: #ffff;
+        opacity: 0.9;
+        color: #ffff;
+        position: relative;
+        top: 50px ;
+        left: 50px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .home a {
+        width: 70px;
+        height: 70px;
+        border-radius: 24px;
+        color: #2F4858;
+    }
+
+    .home a:hover {
+        color: #F6AE2D;
+    }
+
+    .bi-house {
+        margin: 7px 5px 5px 5px;
+    }
+}

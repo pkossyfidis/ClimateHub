@@ -1,0 +1,353 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: #f5f5f5;
+    min-height: 100% !important;
+}
+/*------------------------navbar----------------------*/
+.navbar-nav {
+	margin-left: 10px;
+    font-weight: 300;
+}
+
+.my-nav {
+	z-index: 999;
+	max-width: 100%;
+	background: #2F4858; 
+}
+
+#mainNav{
+	font-size: 22px;
+}
+
+#mainNav .nav-link {
+	color: #ffffff;
+}
+
+#mainNav .nav-link:hover {
+	color: #F6AE2D;
+}
+
+#mainNav .logo {
+	filter: grayscale(100%);
+}
+
+.dropdown-menu {
+    background: #2F4858; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover{
+    color: #F6AE2D;
+    background-color: #2F4858; 
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    background: #2F4858;
+}
+/*------------------------footer----------------------*/
+.page-footer {
+    background: #2f4858;
+    color: white;
+    width: 100%;
+    margin-top: auto ;
+}
+.page-footer .row  {
+    text-align: center;
+}
+.footer-links {
+    color: #ffffff;
+}
+.footer-links:hover {
+    color: #F6AE2D;
+    text-decoration: none;
+}
+
+.orange{
+    color: #F6AE2D;
+}
+
+/*-------------------------------------Dashboard---------------------------*/
+.dashboard{
+    background: #FFFFFF;
+    margin-top: 65px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+}
+.row h2 {
+    font-weight: 600;
+    color: #7F7F7F;
+}
+
+.box {
+
+    margin-top: 80px;
+    background: #FFFFFF;
+    padding: 0;
+}
+
+.scrollable {
+    height: 400px !important;
+    overflow-y:auto !important;
+}
+
+p{
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: #7F7F7F;
+    width: 100%;
+}
+
+a{
+    color: #7F7F7F;
+}
+a:hover {
+    color: #F6AE2D;
+    text-decoration: none;
+}
+
+.bi-trash, .bi-plus-circle{
+    color: #F6AE2D;
+}
+
+#number {
+    font-size: 50px;
+    color: #F6AE2D;
+}
+
+table {
+    width: 100%;
+    background: #FFFFFF;
+    border-collapse: separate;
+    padding: 0 40 40 40px;
+}
+
+th {
+    padding: 20px 10px 20px 10px;
+    color: #7F7F7F;
+    font-size: 20px;
+}
+td {
+    border-top: 1px solid #e4e7ea;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.column1{
+    text-align: center;
+    padding: 15px 8px;
+    width: 20%;
+}
+
+.column2{
+    width: 20%;
+    padding: 15px 8px;
+    text-align: center;
+}
+
+.column3{
+    width: 40%;
+    padding: 15px 8px;
+    text-align: center;
+}
+
+.scroll{
+    height: 100px !important;
+    overflow-y: scroll;
+    padding: 2px 20px 2px 20px;
+    text-align: left;
+    font-size: 16px;
+    border: 0.2px solid gray;
+}
+
+.column4{
+    width: 10%;
+    padding: 15px 8px;
+    text-align: center;
+}
+
+.box2 {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.addnewproblembox {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    padding: 0;
+}
+
+button{
+    background: #FFFFFF;
+    outline: none;
+    border: none;
+    color: #7f7f7f;
+}
+
+button:hover{
+    color: #F6AE2D;
+}
+
+button:focus{
+    border: none;
+    background: #FFFFFF;
+    outline: none;
+}
+
+.gap{
+    margin-bottom: 80px;
+}
+
+
+/*--------------------------form---------------------*/
+#hide{
+    display: none;
+}
+#addproblem{
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    background: #FFFFFF;
+    margin-top: 16px;
+}
+
+#title,#text1,#text2,#text3 {
+    border: none;
+    outline: none;
+    display: block;
+    border-bottom: 1px solid #f5f5f5 ;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#title:focus,#text1:focus,#text2:focus,#text3:focus{
+    border-bottom: 1px solid #F6AE2D;
+}
+
+label{
+    color: #7F7F7F;
+    font-size: 20px;
+    font-weight: bold !important;
+}
+
+#addproblem input[type=submit]{
+    border: none;
+    border-radius: 8px;
+    background: #F6AE2D;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+input#img{
+    display: none;
+}
+
+label#inputfile{
+    border: none;
+    border-radius: 3px;
+    background: #F6AE2D;
+    padding: 2px 8px 2px 8px;
+    margin-left: 3%;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400 !important;
+}
+
+label#inputfile:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/*-----------------------Searchbox--------------------*/
+input[name=search]{
+    padding: 20px 50px 20px 50px;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 20px;
+}
+
+#searchbox input[type=submit]{
+    text-align: center ;
+    padding: 20px 10px;
+    width: 20%;
+    height: 100%;
+    border: none;
+    color: #ffffff;
+    background: #F6AE2D;
+    font-size: 20px;
+    position: relative;
+    float: right;
+}
+#searchbox input[type=submit]:hover{
+   background: #dd9c28;
+}
+
+input[name=search]:focus{
+    border-bottom: 1px solid #F6AE2D;
+}
+
+.bi-search{
+    color: #F6AE2D;
+    margin-right: 5px;
+}
+
+.highlighted{
+    background: red;
+}
+#hidesearch{
+    display: none;
+}
+
+#searchbox {
+    margin-top: 30px;
+    padding: 0;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+/*-----------------------test--------------------*/
+
+.upper{
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    overflow-x:auto !important;
+}
+
+.box3{
+    padding: 0;
+}
+
+#uppertable{
+    border-collapse: separate;
+    width: 100%;
+    padding-bottom: 0;
+    border: none;
+    
+}
+
+.photo{
+    width: 150px;
+    height: 100px;
+}

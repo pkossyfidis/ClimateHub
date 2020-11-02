@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Climate Hub - Home Page</title>
+	<link rel="shortcun icon" href="../logoblack.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://kit.fontawesome.com/9f1f624a60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav id="mainNav" class=" my-nav navbar  navbar-expand-md p-0 fixed-top ">
+		<a href="#" class="navbar-brand ml-3 mb-1">
+			<img  class="logo" src="../logowhite.png" width="50px" height="50px">
+		</a>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+			<span class="navbar-toggler-icon"> <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navLinks">
+			<ul class="navbar-nav">
+				<li class="nav-item pr-2">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item pr-2">
+					<a href="../stakoulas/problems.html" class="nav-link">Problems</a>
+				</li>
+				<li class="nav-item pr-2">
+					<a href="../kossifydis/actions.html" class="nav-link">Actions</a>
+				</li>
+				<li class="nav-item pr-2 dropdown">
+					<div class="btn-group">
+						<a href="../alex/data.html" class="nav-link">Data</a>
+						  <a type="button" class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						    <span class="sr-only">Toggle Dropdown</span>
+						  </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				        	<a class="dropdown-item" href="../info_world/world.html">World</a>
+						    <div class="dropdown-divider"></div>
+						    <a class="dropdown-item" href="../info_world/info.html">Info</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--PHP code!! If the user logs in then it should display a drop down -->
+		<div class="collapse navbar-collapse justify-content-end" id="navLinks">
+			<?php
+				session_start();
+				$_SESSION['UserName'] = $_SESSION['UserName'];
+
+				if (empty($_SESSION['UserName'])){
+					echo  "<ul class='navbar-nav'>";
+					echo  		"<li class='nav-item pr-2'>";
+					echo			"<a href='../login/login.html' class='nav-link'>Log in</a>";
+					echo		"</li>";
+					echo		"<li class='nav-item pr-2'>";
+					echo			"<a href='../signup/signup.html' class='nav-link'>Sign up</a>";
+					echo		"</li>";
+					echo		"<li class='nav-item pr-2'>";
+					echo			"<a href='../admin/users.html' class='nav-link'>Admin</a>";
+					echo		"</li>";
+					echo	"</ul>"	;
+				}else{
+					echo	"<ul class='navbar-nav'>";
+					echo		"<li class='nav-item pr-2 dropdown'>";
+					echo			"<a class='nav-link dropdown-toggle nav-link' href='#'id='navbarDropdown' role='button' data-toggle='dropdown'aria-haspopup='true' aria-expanded='false'>$_SESSION[`UserName`]";
+					echo			"</a>";
+			        echo			"<div class='dropdown-menu' aria-labelledby='navbarDropdown'>";
+			        echo				"<a class='dropdown-item' href='#'>Log out</a>";
+					echo			"</div>";
+					echo 		"</li>";
+					echo    "</ul>";
+				}
+			
+			?>
+			<!--
+			<ul class="navbar-nav">
+				<li class="nav-item pr-2">
+					<a href="../login/login.html" class="nav-link">Log in</a>
+				</li>
+				<li class="nav-item pr-2">
+					<a href="../signup/signup.html" class="nav-link">Sign up</a>
+				</li>
+				<li class="nav-item pr-2">
+					<a href="../admin/users.html" class="nav-link">Admin</a>
+				</li>
+				
+				<li class="nav-item pr-2 dropdown">
+					<a class="nav-link dropdown-toggle nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username
+					</a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			        	<a class="dropdown-item" href="#">Log out</a>
+					</div>
+				</li>
+			</ul>
+			-->       
+		</div>
+	</nav>
+	<div id="MagicCarousel" class=" my-carousel carousel slide " data-ride="carousel">
+		<img class="ontop" src="cover.png">
+	  <div class="carousel-inner" role="listbox">
+	    <ol class="carousel-indicators">
+	      <li data-target="#MagicCarousel" data-slide-to="0" class="active"></li>
+	      <li data-target="#MagicCarousel" data-slide-to="1"></li>
+	      <li data-target="#MagicCarousel" data-slide-to="2"></li>
+	      <li data-target="#MagicCarousel" data-slide-to="3"></li>
+	      <li data-target="#MagicCarousel" data-slide-to="4"></li>
+	    </ol>
+
+	    <div class="carousel-item active">
+		  <img class="d-block carousel-image" src="forest.jpg">
+	      <div class="carousel-caption">
+	      		<p><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+				  </svg> Felton, United States</p>
+	      </div> 
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block  carousel-image" src="nuclear.jpg">
+	      <div class="carousel-caption">
+	      		<p><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+				  </svg> Doel, Beveren, Belgium</p>
+	      </div> 
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block  carousel-image" src="iceberg.jpg">
+	      <div class="carousel-caption">
+	      		<p><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+				  </svg> Greenland</p>
+	      </div> 
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block  carousel-image" src="trash.jpg">
+	      <div class="carousel-caption">
+	      		<p><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+				  </svg> Bangladesh</p>
+	      </div> 
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block  carousel-image" src="5.jpg">
+	      <div class="carousel-caption">
+	      		<p><svg class="bi bi-geo-alt" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 002 6c0 4.314 6 10 6 10zm0-7a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+				  </svg> Columbia Gorge, Wasco, Oregon, USA</p>
+	      </div> 
+	    </div>
+	    
+	    <a class="carousel-control-prev ontopbutton" href="#MagicCarousel" role = "button" data-slide="prev">
+	      <span class="carousel-control-prev-icon"></span>
+	      <span class="sr-only">Previous</span> 
+	    </a>
+	    <a class="carousel-control-next ontopbutton" href="#MagicCarousel" role = "button" data-slide="next">
+	      <span class="carousel-control-next-icon"></span>
+	      <span class="sr-only">Next</span> 
+	    </a>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<img id="imagelogo"  src="logoblack.png">
+			</div>
+			<div class="col-lg-6 paragraph" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-once="true">
+				<h1>CLIMATE HUB</h1>
+				<p>Climate change is now affecting every country on every continent. It is disrupting national economies and affecting lives, costing people, communities and countries dearly today and even more tomorrow. Weather patterns are changing, sea levels are rising, weather events are becoming more extreme and greenhouse gas emissions are now at their highest levels in history. Climate Hub is a website made by a group of young undergrads with the goal to inform people about these problems and encourage them to take action.</p>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<footer class="page-footer font-small blue pt-4">
+	  <div class="container-fluid text-center text-md-left">
+	    <div class="row ">
+	      <hr class="clearfix w-100 d-md-none pb-3">
+	      <div class="col-md-12 mb-md-0 mb-3">
+	        <h5 class="text-uppercase orange">Links</h5>
+	        <a class="pr-3 footer-links" href="#">Home</a>
+	        <a class="pr-3 footer-links" href="../stakoulas/problems.html">Problems</a>
+	        <a class="pr-3 footer-links" href="../kossifydis/actions.html">Actions</a>
+	        <a class="pr-3 footer-links" href="../alex/data.html">Data</a>
+	        <br>
+	       	<a class="pr-3 footer-links" href="../info_world/world.html">World</a>
+			<a class="pr-3 footer-links" href="../info_world/info.html ">Info</a>
+			<br>
+			<a class="pr-3 footer-links" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+			<a class="pr-3 footer-links" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+			<a class="pr-3 footer-links" href="https://www.twitter.com/"><i class="fab fa-twitter-square"></i></a>
+	      </div>
+	  </div>
+	  <div class="footer-copyright text-center py-3">© 2020 AKLPTeam:
+	    <a class="footer-links" href="#"> AKLPTeam.com</a>
+	  </div>
+	</footer>
+
+	<!-- Arrow Up -->
+	<a href="#" class="scrolltotop"><i class="fas fa-arrow-up"></i></a>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<!--<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
+</body>
+</html>

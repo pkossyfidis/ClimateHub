@@ -1,0 +1,249 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+	background: #f5f5f5;
+}
+/*------------------------navbar----------------------*/
+.navbar-nav {
+	margin-left: 10px;
+    font-weight: 300;
+}
+
+.my-nav {
+	z-index: 999;
+	max-width: 100%;
+	background: #2F4858; 
+}
+
+#mainNav{
+	font-size: 22px;
+}
+
+#mainNav .nav-link {
+	color: #ffffff;
+}
+
+#mainNav .nav-link:hover {
+	color: #F6AE2D;
+}
+
+#mainNav .logo {
+	filter: grayscale(100%);
+}
+
+.dropdown-menu {
+    background: #2F4858; 
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover{
+    color: #F6AE2D;
+    background-color: #2F4858; 
+}
+
+
+/*------------------------carousel----------------------*/
+
+
+#MagicCarousel {
+    width: 100% !important;
+    margin: 0px;
+    padding: 0;
+    height: 500px;
+    z-index: 1;
+}
+#MagicCarousel li {
+    margin-bottom: 20px;
+}
+
+.ontop {
+    position: absolute;
+    z-index: 500;
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item {
+    height: 500px;
+    width: 100% !important; 
+}
+
+.carousel-image {
+    height: 500px;
+    width: 100%;
+}
+
+.ontopbutton {
+	position: absolute;
+    z-index: 998;
+    height: 400px;
+}
+
+/*------------------------middle-content----------------------*/
+.container {
+	color: black;
+}
+#imagelogo {
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container #imagelogo {
+	width: 350px;
+	height: 350px;
+	filter: grayscale(100%);
+}
+.img-center {
+	margin:0 auto;
+}
+.container .paragraph {
+    text-align: justify;
+    padding: 20px 15px 100px 15px;
+}
+.container .paragraph h1{
+	color: #F6AE2D;
+	text-align: center;
+	padding-bottom: 50px;
+	font-weight: 500;
+}
+
+
+/*------------------------footer----------------------*/
+.page-footer {
+	background: #2f4858;
+    color: white;
+    width: 100%;
+}
+.page-footer .row1  {
+	text-align: center !important;
+}
+.footer-links {
+	color: #ffffff;
+}
+.footer-links:hover {
+	color: #F6AE2D;
+	text-decoration: none;
+}
+
+.orange{
+    color: #F6AE2D;
+}
+
+/*------------------------scroll button----------------------*/
+.scrolltotop {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	bottom: 80px;
+	right: 30px;
+	line-height: 40px;
+	text-align: center;
+	background: #dcdcdc;
+	color: #F6AE2D;
+	border-radius: 10px;
+	display: none;
+}
+.scrolltotop:hover{
+	color: black;
+}
+
+
+.col-lg-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sr-only{
+    width: 10000px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+@media only screen and (min-width:767px) and (max-width:1200px){
+    #mainNav{
+        font-size: 20px !important;
+    }
+    #mainNav .nav-link {
+       padding-left: 0px !important;
+    }
+    .links{
+        margin:15px;
+    }
+}
+
+/*------------------------------Desktop style-------------*/
+@media only screen and (min-width: 1000px) {
+    .container{
+        margin-bottom: 80px;
+    }
+    #MagicCarousel {
+        width: 100% !important;
+        margin: 0px;
+        padding: 0;
+        height: 700px;
+        z-index: 1;
+    }
+    #MagicCarousel li {
+        margin-bottom: 20px;
+    }
+    
+    .ontop {
+        position: absolute;
+        z-index: 500;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .carousel-item {
+        height: 700px;
+        width: 100% !important; 
+    }
+    
+    .carousel-image {
+        height: 700px;
+        width: 100%;
+    }
+
+    .carousel-caption {
+        margin-bottom: 50px;
+    }
+
+    .container .paragraph {
+        text-align: justify;
+        padding: 100px 15px 100px 15px;
+    }
+    
+    #imagelogo {
+        padding-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container #imagelogo {
+        width: 500px;
+        height: 500px;
+        filter: grayscale(100%);
+    }
+    .col-lg-6 {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ontopbutton {
+        height: 600px;
+    }
+}
